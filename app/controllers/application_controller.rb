@@ -16,6 +16,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/registrations' do
-    
+
   end
 end
