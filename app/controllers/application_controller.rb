@@ -18,8 +18,8 @@ class ApplicationController < Sinatra::Base
   post '/registrations' do
     @user = User.new(name: params[:name], email: params[:email], password: params[:password])
     @user.save
-    session[:user_id] = @user.id 
-    
+    session[:user_id] = @user.id
+
     erb :'/users/home'
   end
 end
