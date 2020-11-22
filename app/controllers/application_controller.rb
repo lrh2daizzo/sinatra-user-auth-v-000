@@ -22,4 +22,8 @@ class ApplicationController < Sinatra::Base
 
     erb :'/users/home'
   end
+
+  get '/sessions/login' do
+    erb :'sessions/login'
+  end
 end
