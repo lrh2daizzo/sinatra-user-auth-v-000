@@ -16,6 +16,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/registrations' do
-    erb :'users/home'
+    erb :'/users/home'
   end
 end
